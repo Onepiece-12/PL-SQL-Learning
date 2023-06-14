@@ -1,0 +1,6 @@
+sqlplus / as sysdba;
+alter session set container=orclpdb1;
+alter pluggable database open;
+alter pluggable database orclpdb1 save state;
+alter user hr identified by hr account unlock;
+/
